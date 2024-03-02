@@ -1,0 +1,116 @@
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, Arial, sans-serif;
+  margin: 2em;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #eee;
+}
+
+img {
+  width: 80%;
+  margin: 0 auto; /* Center the image horizontally */
+  animation: fade-in 2s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Heading */
+h1 {
+  color: #663300;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Password Container */
+.password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 2em;
+  margin: 0 auto;
+  width: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  animation: box-shadow-pulse 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes box-shadow-pulse {
+  from { box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); }
+  to { box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
+}
+
+/* Password Input */
+#password-length {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+#password-length:focus {
+  border-color: #663300;
+  outline: none;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+#generate {
+  background-color: #663300;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#generate:hover {
+  background-color: #8C4A00;
+}
+
+#generated-password {
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 1em;
+  animation: display-password 1s ease-in-out forwards;
+}
+
+@keyframes display-password {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.glitchButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
